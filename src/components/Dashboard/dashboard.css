@@ -1,0 +1,131 @@
+:root {
+  --mainBlue: #3a7ca5;
+  --secondaryBlue: #0067a5;
+  --mainOrange: #ffb600;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container .sm-screen-logo {
+  display: none;
+}
+
+/* SHOW SMALL LOGO BELOW 420px */
+@media only screen and (max-width: 420px) {
+  .navbar .container .sm-screen-logo {
+    display: block;
+    width: 70px;
+  }
+  .navbar .container .lg-screen-logo {
+    display: none;
+  }
+}
+
+.logout-btn {
+  border: 1px solid var(--mainBlue);
+  /* padding: 0.5rem 1rem;  */
+  background-color: var(--mainBlue);
+  color: #fff;
+  font-weight: bold;
+}
+.logout-btn:hover {
+  background-color: var(--secondaryBlue);
+  border: 1px solid var(--secondaryBlue);
+  color: #fff;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table1 {
+  width: 80%;
+  border-collapse: separate;
+  border-spacing:  1em;
+  margin: 0 auto;
+}
+
+.table1 tr td img {
+    width: 100px;
+    height: 100px;
+}
+
+.table1 tr td span {
+    display: none;
+}
+
+/* CHANGE TABLE DISPLAY WHEN DISPLAY IS 420PX AND BELOW */
+@media only screen and (max-width: 420px) {
+
+    .table1 tr {
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(165, 165, 165, 0.5);
+        /* background: var(--mainBlue); */
+        padding:  0.5em;
+      }
+
+      .table1 tr #id-td {
+        display: none;
+      }
+
+    .table1 tr td {
+        /* width: 100%; */
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+
+    .table1 tr td img {
+        width: 100%;
+        /* border-radius: 5px; */
+    }
+    .table1 tr td span {
+        display: none;
+    }
+
+      .table1 thead {
+        display: none;
+        /* padding: 0;
+        margin: 0; */
+      }
+}
+
+
+
+.new-input-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  margin-bottom: 2em;
+}
+.new-input-btn button {
+  background-color: var(--mainBlue);
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  margin: 3rem 0 3rem 0;
+}
+.new-input-btn button:hover {
+  background-color: var(--secondaryBlue);
+}
+
+.new-input-btn form button {
+  color: #fff;
+}
+.new-input-btn form button:hover {
+  color: #fff;
+}
+.image-from-db {
+  object-fit: cover;
+}

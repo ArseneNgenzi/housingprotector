@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+:root {
+  --mainBlue: #3a7ca5;
+  --secondaryBlue: #0067a5;
+  --mainOrange: #ffb600;
+}
+
+
+.login-parent {
+    background: var(--mainBlue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login-div {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.7rem;
+    padding: 3rem 1rem;
+    box-shadow: 0px 0px 15px 8px var(--secondaryBlue);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+.inputs input, .submission .login-btn {
+    border: 0;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    
+}
+.inputs input {
+    width: 70%;
+    outline: none;
+}
+.submission .login-btn {
+    width: 75%;
+    background-color: var(--mainBlue);
+    color: #fff;
+    transition: ease-in-out .3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.submission .login-btn:hover {
+    cursor: pointer;
+    background-color: var(--secondaryBlue);
+    color: #fff;
+}
+
+.login-div .submission {
+    text-align: center;
+}
+
+.error-showing {
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-showing .error-text {
+    color: red;
+    visibility: hidden;
+
+}
+
+.error-showing .redColor {
+    color: red;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 1040px) {
+    .login-div {
+      width: 50%;
+    }
+    .inputs input {
+        width: 80%;
+    }
+    .submission .login-btn {
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .login-div {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .login-div {
+      width: 80%;
+    }
+
+    .inputs input[placeholder] {
+        font-size: 0.9em;
+    }
+    .submission .login-btn {
+        font-size: 0.9em;
+    }
+  }

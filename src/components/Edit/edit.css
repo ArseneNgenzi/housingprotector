@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --mainBlue: #3a7ca5;
+    --secondaryBlue: #0067a5;
+    --mainOrange: #ffb600;
+  }
+  
+  .edit-back-container {
+    background-color: rgba(43, 43, 43, 0.498);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-front-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 1px var(--secondaryBlue);
+    width: 70%;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+  
+  .modal-head-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-head-title h3 {
+      text-transform: uppercase;
+  }
+  
+  .modal-body-inputs {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-body-inputs div {
+    width: 70%;
+  }
+  .modal-body-inputs div input {
+    padding: 0.5em;
+  }
+  .modal-body-inputs div label {
+    font-weight: bold;
+  }
+  
+  .modal-footer-cancel-save {
+    text-align: center;
+  }
+  
+  .modal-footer-cancel-save .save {
+    background-color: var(--mainBlue);
+    border: 0;
+    color: #fff;
+  }
+  
+  .modal-footer-cancel-save .cancel {
+    text-decoration: underline;
+  }
+  
+  .modal-footer-cancel-save .cancel:hover {
+    border: 1px solid #fff;
+  }
+  
+
+  @media only screen and (max-width: 500px) {
+    .edit-front-container {
+      width: 90%;
+    }
+  }
